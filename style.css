@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans';
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #9bbc0f;
+}
+
+.container div {
+    flex: 1 1 auto;
+}
+
+.header {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #9bbc0f;
+    color:#0f380f;
+    max-height: 70px;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #0f380f;
+    color:#9bbc0f;
+    max-height: 70px;
+}
+
+.score {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.score div {
+    flex: 0 1 auto;
+}
+
+.score-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #0f380f;
+    color: #9bbc0f;
+    border-radius: 10px;
+}
+
+.computer-score, .player-score {
+    margin: 15px 30px;
+}
+
+.score-container h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#pc-btn, #player-btn {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    background-color: black;
+    border: none;
+    font-size: 70px;
+    color: #9bbc0f;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+}
+
+.hand-container {
+    display: flex;
+    display: 0 1 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 300px;
+}
+
+.computer {
+    display: flex;
+    justify-content: right;
+}
+.player {
+    display: flex;
+    justify-content: left;
+}
+
+.computer img, .player img {
+    max-width: 100%;
+    height: auto;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap:50px;
+    padding-bottom: 10px;
+}
+
+.controls div {
+    flex: 0 1 auto;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content:left;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap:50px;
+}
+
+.button {
+    padding: 10px;
+    background-color: #aaa;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    box-shadow: -5px 6px #222,
+    -5px 3px #222;
+    transform: translate(5px, -5px);
+}
+.button:active {
+    box-shadow: 0 0 #222;
+    transform: translate(0);
+}

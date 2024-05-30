@@ -4,43 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>R-P-S</title>
 </head>
 <body>
-    <div class="header">
-        <h1>Rock & Paper & Scissors</h1>
-    </div>
-
-    <div class="game-container">
-        <div class="score">
-
+    <div class="container">
+        <div class="header">
+            <h1>Rock & Paper & Scissors</h1>
         </div>
 
-        <div class="hand-container">
-            <div class="hand">
-
+        <div class="game-container">
+            <div class="score">
+                <div class="score-container">
+                    <div class="computer-score">
+                        <h3>PC</h3>
+                        <button id="pc-btn">0</button>
+                    </div>
+                    <div class="player-score">
+                        <h3>YOU</h3>
+                        <button id="player-btn">0</button>
+                    </div>
+                </div>
             </div>
 
-            <div class="hand">
-
+            <div class="hand-container">
+                    <div class="computer">
+                        <img src="./images/stoneComputer.png" alt="">
+                    </div>
+                    <div class="player">
+                        <img src="./images/scissorsPlayer.png" alt="">
+                    </div>
             </div>
         </div>
-    </div>
 
-    <div class="controls">
-        <div class="sign">
-
+        <div class="controls">
+            <div class="left">
+                <button type="button" class="button">
+                    <img src="./images/stone.png" alt="">
+                </button>
+            </div>  
+            <div class="center">
+                <button type="button" class="button">
+                    <img src="./images/paper.png" alt="">
+                </button>
+                <button type="button" class="button">
+                    <img src="./images/question-mark_5727965.png" alt="">
+                </button>
+            </div>
+            <div class="right">
+                <button type="button" class="button">
+                    <img src="./images/scissors.png" alt="">
+                </button>
+            </div>
         </div>
-        <div class="sign">
-
-        </div>
-        <div class="sign">
-
-        </div>
-    </div>
-    
-    <div class="footer">
-
+        
+        <!--
+        <div class="footer">
+            <p>PredragNN</p>
+        </div>-->
     </div>
 </body>
 </html>
