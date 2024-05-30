@@ -91,4 +91,4 @@ function playGame() {
     }
 }
 
-playGame();
+/*playGame();*/
