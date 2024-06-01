@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>R-P-S</title>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1>Rock & Paper & Scissors</h1>
+            <h1 class="honk-font">Rock - Paper - Scissors</h1>
         </div>
 
         <div class="game-container">
@@ -18,50 +21,48 @@
                 <div class="score-container">
                     <div class="computer-score">
                         <h3>PC</h3>
-                        <button id="pc-btn">0</button>
+                        <button id="pc-btn"></button>
                     </div>
                     <div class="player-score">
                         <h3>YOU</h3>
-                        <button id="player-btn">0</button>
+                        <button id="player-btn"></button>
                     </div>
                 </div>
             </div>
 
             <div class="hand-container">
                     <div class="computer">
-                        <img src="./images/stoneComputer.png" alt="">
+                        <img src="./images/hand-img/stonePC.png" alt="">
                     </div>
                     <div class="player">
-                        <img src="./images/scissorsPlayer.png" alt="">
+                        <img src="./images/hand-img/stonePlay.png" alt="">
                     </div>
             </div>
         </div>
 
         <div class="controls">
             <div class="left">
-                <button type="button" class="button">
+                <button type="button" class="button" value="stone">
                     <img src="./images/stone.png" alt="">
                 </button>
             </div>  
             <div class="center">
-                <button type="button" class="button">
+                <button type="button" class="button" value="paper">
                     <img src="./images/paper.png" alt="">
                 </button>
-                <button type="button" class="button">
+                <button type="button" class="button-pwr" id="power">
+                    <img src="./images/power-button.png" alt="">
+                </button>
+                <button type="button" class="button" value="random">
                     <img src="./images/question-mark_5727965.png" alt="">
                 </button>
             </div>
             <div class="right">
-                <button type="button" class="button">
+                <button type="button" class="button" value="scissors">
                     <img src="./images/scissors.png" alt="">
                 </button>
             </div>
         </div>
-        
-        <!--
-        <div class="footer">
-            <p>PredragNN</p>
-        </div>-->
     </div>
 </body>
 </html>
